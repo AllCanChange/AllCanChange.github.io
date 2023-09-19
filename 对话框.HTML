@@ -1,0 +1,120 @@
+<!-- 灰色背景层 S -->
+<div class="gray-warp" id="poplayer">
+</div>
+<!-- 灰色背景层 E -->
+<!-- 视频弹出层 S -->
+<div class="vid-dia" id="video1">
+//关闭按钮
+    <a href="javascript:close1video1()" id="close1" ><i class="iconfont">&#xe66d;</i></a>
+ //要播放的视频  
+    <video src="Isaac Gracie - Silhouettes Of You.mp4" width="1000px" controls autoplay >
+    </video>
+   
+</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Lorem ipsum dolor sit amet, consectetur.</p>
+<p>Blanditiis explicabo laboriosam nam nihil quasi!</p>
+<p>Deleniti deserunt est et ipsum nam!</p>
+<p>Aperiam ea mollitia optio quis tenetur?</p>
+<p>Illo ipsum optio quia similique sit.</p>
+<label>姓名：</label> <input type="text" id="uname">
+
+<script>
+    //将数据直接输入到网页中
+    document.write('hello')
+    document.writeln("javascript")
+
+    //输出指定的标签元素上（此方法使用最多）  .innerHTML    .innerText
+    //代表当前文档的第一个p标签
+    let ps = document.getElementsByTagName('p')[0]
+    ps.innerHTML = '<strong>文档段落标签</strong>'  //可以显示标签效果
+    let p3 = document.getElementsByTagName('p')[2]
+    p3.innerText = '<strong>文档段落标签</strong>'  //只能显示文本文字
+    let p4 = document.getElementsByTagName('p')[3]
+    //'javascript'.fontcolor('red') 其实是字符串<font color="red">javascript</font>
+    p4.innerHTML = 'javascript'.fontcolor('red')
+    let un = document.getElementById('uname')
+    un.value = '请输入姓名'
+    un.title = 'aaaaa'
+
+    //控制网页标题
+    document.title = Math.PI
+</script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>summerlex@126.com</title>
+</head>
+<body>
+<h1>Hello, world!</h1>
+<script>
+    alert('hello') //提示框
+    window.alert('欢迎')
+    let s = alert
+    s('hello world')
+    //s(1 + 2)
+</script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>summerlex@126.com</title>
+</head>
+<body>
+<h1>Hello, world!</h1>
+<!--onclick单击事件，鼠标单击才执行-->
+<a href="http://www.baidu.com" onclick="return confirm('是否访问百度？')">百度</a>
+<p>姓名：李四 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:void(0)" id="del">删除</a></p>
+<script>
+    //确认框
+    // let msg = confirm('yes')
+    // console.log(msg,typeof (msg))
+    let del = document.getElementById('del')
+    del.onclick = function () {
+        if(confirm('是否删除?')){
+            let pp = document.getElementsByTagName('p')[0]
+            pp.remove()
+        }
+    }
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>summerlex@126.com</title>
+</head>
+<body>
+<h1>Hello, world!</h1>
+<script>
+let age = prompt('请输入你的年龄：',18)
+if (age>18){
+    alert('欢迎访问')
+}else{
+    alert('no go to baidu')
+    //跳转到百度网址
+    location.href = 'http://www.baidu.com'
+}
+</script>
+
+</body>
+</html>
+
+
+
