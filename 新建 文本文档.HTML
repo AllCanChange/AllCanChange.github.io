@@ -4,21 +4,21 @@
 </head>
 <body>
 	<h1>欢迎来到我的网页</h1>
-	<p>这是我的第一个网页。我很高兴你能来看看!</p>
-	<img src="https://www.example.com/images/myimage.jpg" alt="我的图片" width="500" height="300"/>
+	<p1>这是我的第一个网页。我很高兴你能来看看!</p1>
+	<img src="https://ts1.cn.mm.bing.net/th/id/R-C.79366a01380df353096c395ae206d035?rik=qhbr5uxofzkUAQ&riu=http%3a%2f%2f222.186.12.239%3a10010%2fxirijie_180725%2f002.jpg&ehk=SVgIGY1bE9N6811wwVCN1MatAjAbATqX9MbcfKZhvQc%3d&risl=&pid=ImgRaw&r=0" alt="我的图片" width="300" height="500"/>
 	<ul>
 		<li>列表项1</li>
 		<li>列表项2</li>
 		<li>列表项3</li>
 	</ul>
-	<p>我喜欢在网页上展示我的爱好:</p>
-	<p>树莓派是一款小型、低功耗的计算机，可以用来搭建网络服务器。下面是搭建一个基于Apache的Web服务器的步骤：
-
-1. 购买一台树莓派，并安装操作系统
+	<p2>我喜欢在网页上展示我的爱好:</p2>
+	<p3>树莓派是一款小型、低功耗的计算机，可以用来搭建网络服务器。下面是搭建一个基于Apache的Web服务器的步骤：</p3>
+<p align="left">
+<br>1. 购买一台树莓派，并安装操作系统<br/>
 
 首先，您需要购买一台树莓派，并将操作系统安装在上面。您可以从官方网站下载Raspbian操作系统的镜像文件，并使用软件像Etcher将其写入SD卡中。
 
-2. 安装Apache服务器
+<br>2. 安装Apache服务器<br/>
 
 打开终端并输入以下命令，以安装Apache服务器：
 
@@ -27,7 +27,7 @@ sudo apt-get update
 sudo apt-get install apache2 -y
 ```
 
-3. 测试Apache服务器
+<br>3. 测试Apache服务器<br/>
 
 安装完成后，您可以在浏览器中输入您的树莓派的IP地址来测试Apache服务器是否正常工作。您可以通过以下命令找到您的树莓派的IP地址：
 
@@ -35,7 +35,7 @@ sudo apt-get install apache2 -y
 hostname -I
 ```
 
-4. 设置防火墙
+<br>4. 设置防火墙<br/>
 
 为了保护您的服务器，并防止未经授权的访问，您需要设置防火墙。默认情况下，树莓派使用的是iptables防火墙。您可以按照以下步骤配置它：
 
@@ -48,17 +48,67 @@ sudo sh -c "iptables-save > /etc/iptables.ipv4.nat"
 
 以上命令允许SSH和HTTP流量，并拒绝所有其他的流量。
 
-5. 创建网站内容
+<br>5. 创建网站内容<br/>
 
 现在，您可以在/var/www/html目录下创建您的网站内容。您可以在该目录下新建一个index.html文件，并在其中添加您的网站内容。
 
-6. 将域名指向您的服务器
+<br>6. 将域名指向您的服务器<br/>
 
 如果您想使用自己的域名访问您的服务器，则需要将其指向您的树莓派的IP地址。为此，您可以在您的DNS提供商的管理面板中创建一个A记录，将域名映射到您的树莓派的IP地址。
 
-希望这个简单的树莓派搭建网络服务器指南能够对您有所帮助。:</p>
+希望这个简单的树莓派搭建网络服务器指南能够对您有所帮助。</p><br/>
+
+
 	<ol>
-		<li>阅读</li>
+		<li>2023.3.19</li>
+		<p>树莓派搭建网络服务器 html文本换行  网络服务器支持1亿人访问:</p>
+		<p>好的，以下是树莓派搭建网络服务器的步骤：
+
+1. 在树莓派上安装 Apache 等 Web 服务器软件。可以使用如下命令安装 Apache：
+
+```
+sudo apt-get update
+sudo apt-get install apache2
+```
+
+2. 在树莓派上安装 PHP。可以使用如下命令安装 PHP：
+
+```
+sudo apt-get install php libapache2-mod-php
+```
+
+3. 安装 MySQL 数据库。可以使用如下命令安装 MySQL：
+
+```
+sudo apt-get install mysql-server
+```
+
+4. 配置 Apache 服务器，将其指向你的网站根目录。默认情况下，网站根目录为 /var/www/html。你可以创建一个 index.php 文件测试一下：
+
+```
+sudo nano /var/www/html/index.php
+```
+
+在文件中输入：
+
+```php
+<?php
+phpinfo();
+?>
+```
+
+保存并退出文件。
+
+5. 启动 Apache 和 MySQL 服务器：
+
+```
+sudo service apache2 start
+sudo service mysql start
+```
+
+现在你的树莓派已经成为一个网络服务器了！可以通过浏览器访问树莓派的 IP 地址来查看网站。
+
+希望对你有所帮助！如有问题，请随时提出。:</p>
 		<li>旅行</li>
 		<li>学习编程</li>
 	</ol>
